@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
@@ -13,20 +15,23 @@
     }
 
     nav {
-      background: #333;
+      background: #f2f2f2; /* match the off-white */
       padding: 1rem;
       text-align: center;
+      border-bottom: 1px solid #ddd; /* subtle divider line */
     }
 
     nav a {
-      color: white;
+      font-family: 'Comfortaa', sans-serif;
+      color: black;
       margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: normal; /* no bold */
+      font-size: 1.1rem;
     }
 
     nav a:hover {
-      color: #ffcc00;
+      color: #555; /* subtle darker hover */
     }
 
     .about-container {
@@ -41,6 +46,7 @@
 
     .about-text {
       flex: 1;
+      line-height: 1.5; /* <-- paragraph line spacing */
     }
 
     .about-photo {
@@ -70,7 +76,7 @@
         engineering project write-ups. These are for engineering related projects I complete by myself that I feel are good enough to share professionally.
         A big hobby of mine is photography, so I figured this website would also be a good place to include my photo portfolio online. If you want to contact me for
         any reason my school (work) email is kuyper@vt.edu, and you can also connect with me on LinkedIn, which is linked on the homepage of this website.
-        </p>
+      </p>
     </div>
     <div class="about-photo">
       <img src="me.jpg" alt="Photo of me">
@@ -78,4 +84,3 @@
   </div>
 </body>
 </html>
-
