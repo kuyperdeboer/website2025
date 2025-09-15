@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <style>
+    body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* this makes your PNG gradient the background */
+  background: url("gradient1.png") no-repeat center center fixed;
+  background-size: cover;  /* makes the image stretch to cover the whole screen */
+
+  font-family: Arial, sans-serif;
+}
+
+    }
+
+    /* Center container */
+    .container {
+      text-align: center;
+    }
+
+    /* Link styles */
+    .container a {
+      display: block;
+      font-size: 2.5rem;
+      margin: 20px 0;
+      text-decoration: none;
+      color: white;
+      font-weight: normal;
+      transition: color 0.3s ease;
+    }
+
+    .container a:hover {
+      color: #ffcc00; /* highlight color on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="projects.html">PROJECTS</a>
+    <a href="photography.html">PHOTOGRAPHY PORTFOLIO</a>
+    <a href="about.html">ABOUT</a>
+  </div>
+</body>
+</html>
