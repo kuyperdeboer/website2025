@@ -6,27 +6,33 @@
   <title>My Website</title>
   <style>
     body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column; /* stack header, middle, footer vertically */
+      justify-content: space-between; /* header at top, menu in middle, logo at bottom */
+      align-items: center;
 
-  /* this makes your PNG gradient the background */
-  background: url("gradient1.png") no-repeat center center fixed;
-  background-size: cover;  /* makes the image stretch to cover the whole screen */
+      background: url("gradient1.png") no-repeat center center fixed;
+      background-size: cover;
 
-  font-family: Arial, sans-serif;
-}
-
+      font-family: Arial, sans-serif;
     }
 
-    /* Center container */
+    /* Header text */
+    header {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-top: 20px;
+      color: black;
+      text-align: center;
+    }
+
+    /* Center container for main menu */
     .container {
       text-align: center;
     }
 
-    /* Link styles */
     .container a {
       display: block;
       font-size: 3.5rem;
@@ -39,19 +45,34 @@
     }
 
     .container a:hover {
-      color: #ffffff; /* highlight color on hover */
+      color: #ffffff;
+    }
+
+    /* Footer with LinkedIn logo */
+    footer {
+      margin-bottom: 20px;
+    }
+
+    footer img {
+      width: 60px;   /* adjust size of the logo */
+      height: auto;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
+  <header>Kuyper DeBoer</header>
+
   <div class="container">
     <a href="projects.html">PROJECTS</a>
     <a href="photography.html">PHOTOGRAPHY PORTFOLIO</a>
     <a href="about.html">ABOUT</a>
   </div>
+
+  <footer>
+    <a href="www.linkedin.com/in/kuyper-deboer-23389a327" target="_blank">
+      <img src="linkedin.png" alt="LinkedIn">
+    </a>
+  </footer>
 </body>
 </html>
-
-
-
-
