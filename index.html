@@ -16,13 +16,10 @@
       flex-direction: column; /* stack header, middle, footer vertically */
       justify-content: space-between; /* header at top, menu in middle, logo at bottom */
       align-items: center;
-
       background: url("gradient1.png") no-repeat center center fixed;
       background-size: cover;
-
       font-family: 'Montserrat', sans-serif;
     }
-
     /* Header text */
     header {
       font-family: 'Montserrat', sans-serif;
@@ -32,12 +29,10 @@
       color: black;
       text-align: center;
     }
-
     /* Center container for main menu */
     .container {
       text-align: center;
     }
-
     .container a {
       font-family: 'Montserrat', sans-serif;
       display: block;
@@ -49,43 +44,41 @@
       font-weight: normal;
       transition: color 0.3s ease;
     }
-
     .container a:hover {
       color: #ffffff;
     }
-
-    /* Footer with LinkedIn logo */
+    /* Footer with social media logos */
     footer {
       margin-bottom: 20px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
     }
-
     footer img {
-      width: 40px;   /* adjust size of the logo */
+      width: 40px;
       height: 40px;
       cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+    footer img:hover {
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
   <header>Kuyper DeBoer</header>
-
   <div class="container">
     <a href="projects.html">Projects</a>
     <a href="photography.html">Photography Portfolio</a>
     <a href="about.html">About</a>
   </div>
-
   <footer>
     <a href="https://www.linkedin.com/in/kuyper-deboer-23389a327" target="_blank">
       <img src="linkedin.png" alt="LinkedIn">
     </a>
+    <a href="https://flic.kr/ps/447fPx" target="_blank">
+      <img src="5968708.png" alt="Flickr">
+    </a>
   </footer>
 </body>
 </html>
-
-
-
-
-
-
-
